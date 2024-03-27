@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <style>
+      body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .action {
+        margin-top: 15%;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .action a {
+        margin: 3%;
+        border-radius: 10%;
+        height: 30px;
+        width: 80px;
+        font-size: larger;
+        background-color: rgb(76, 180, 76);
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+      }
+      .action a:hover {
+        border-radius: 10%;
+        border: 2px lightgreen solid;
+        background-color: green;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Student management Application</h1>
+    <div class="action">
+      <a href="registationform.html">register</a>
+      <form method="get" action="./registation"></form>
+      <a href="./registation" type="submit">view list</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMS REGISTATION FORM</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="image"><img src="./images (1).png" alt=""></div>
+    </div>
+    <div class="subbody">
+      <div class="form">
+        <div class="heading"><h1 style="color: darkcyan;">REGISTATION FORM</h1></div>
+        <div class="line"></div>
+        <hr>
+        <form action="./registation" method="post" >
+          <div class="name box">
+            <label for="name"> Name </label>
+            <input type="text" name="name" class="val val2" required onkeydown="return /[a-zA-Z]/i.test(event.key)" />
+          </div>
+          <div class="Roll box">
+            <label for="Roll"> Roll Number </label>
+            <input type="number" min="1000000000" max="9999999999" name="ROLL" class="val val2" required />
+          </div>
+          <div class="age box">
+            <label for="age"> Age </label>
+            <input type="number" min="18" max="35" name="age" id="age" class="val val2" required />
+          </div>
+          <div class="gender box">
+            <label for="gender"> Gender </label>
+            <div class="male">
+              <input type="radio" class="val1" name="gender"  value="male" id="male" required /><span> Male</span>
+            </div>
+            <div class="female">
+              <input type="radio" class="val1" name="gender"  value="female" id="female" required /><span> Female</span>
+            </div>
+            </select>
+          </div>
+          <div class="course box">
+            <label for="course"> Course </label>
+            <select name="course" class="val" id="mySelect" required>
+              <option value="">--SelectCourse--</option>
+              <option value="BCA">BCA</option>
+              <option value="BBA">BBA</option>
+              <option value="BJAMC">BJAMC</option>
+              <option value="MCA">MCA</option>
+              <option value="MBA">MBA</option>
+              <option value="LLB">LLB</option>
+              <option value="B.tech">B.tech</option>
+              <option value="B.A.llb">B.A.llb</option>
+            </select>
+          </div>
+          <div class="email box">
+            <label for="email"> E-Mail </label>
+            <input type="email" name="email" class="val val2" required />
+          </div>
+          <div class="box action">
+			  <button type="submit" class="btn">Register</button>
+			  <button class="btn2"><a href="index.html">HOME</a></button>
+		  </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
